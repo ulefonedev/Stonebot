@@ -1,5 +1,5 @@
-# Bot for [Chaincoin's Discord](https://discord.gg/NabdcJ7)
-
+# Bot for [Stonecoin's Discord] https://discord.gg/GVcMcng
+Originally based off of Chaincoin's bot
 (This README will be updated along with bot updates)
 
 ## Features:
@@ -22,7 +22,7 @@
     * Displays current Hashrate of Network
     * Displays potential Earnings For Given Hashrate
 * **!info**
-    * What is a ChainCoin?
+    * What is a Stonecoin?
 * **!market**
     * See all buy/sell orders.
 * **!masternode**
@@ -33,7 +33,7 @@
 * **!ping**
     * responds pong, useful for checking if bot is alive
 * **!price**
-    * Check Chaincoin price.
+    * Check Stonecoin price.
 * **!rain [amount]**
     * Send a tip to all active members.
     * This command only can be used in #chaintipster
@@ -45,16 +45,16 @@
 * **!spanish [subcommand] [tutorial, faq, info, masternode, etc.]**
     * Guías y Tutoriales.
     * Preguntas más frecuentes.
-    * ¿Qué esChainCoin - CHC?
+    * ¿Qué esStoneCoin - CHC?
     * ¿Qué es un Masternode?
     * etc. soon
     * This command only can be use in #espanol-channel
 * **!specs**
-    * ChainCoin specification
+    * StoneCoin specification
 * **!tip [amount] [@username] || !tip [@username] [amount]**
     * Send a tip to a member.
 * **!tutorial**
-    * ChainCoin Tutorials & Guides
+    * StoneCoin Tutorials & Guides
 * **!vision**
     * The vision
 * **!welcome [@username]**
@@ -83,6 +83,6 @@ node bot/bot.js
 
 ## Donation
 ```
-Bitcoin: 1Fcb2JAGziHSCdMqcysP1jHoXHdh3ikkMn
-Chaincoin: CL5WSq5M1RRPFDfDbZp6dq2ndV6F93CtkB
+Stonecoin: CL5WSq5M1RRPFDfDbZp6dq2ndV6F93CtkB
+Ravencoin: 
 ```
