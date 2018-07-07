@@ -197,7 +197,7 @@ bot.on("ready", async function() {
         author: {
             name: "Join Channels Instruction."
         },
-        description: 'Welcome to the Chaincoin Discord! Please select the channels YOU are interested in following. JOIN by "Clicking On" the corresponding emoji **below the message**. Deselecting the emoji will remove the channel from your view.'
+        description: 'Welcome to the Stonecoin Discord! Please select the channels YOU are interested in following. JOIN by "Clicking On" the corresponding emoji **below the message**. Deselecting the emoji will remove the channel from your view.'
     };
 
     await bot.channels.get(ChannelID)

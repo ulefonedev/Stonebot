@@ -1,17 +1,17 @@
-{  
-    "bot":{  
+{
+    "bot":{
         "token":"",
         "prefix":"!",
-        "name": "",
-        "iconurl": "https://raw.githubusercontent.com/ChainBotMaster/chainbot/master/bot/image/newchc-01.png",
+        "name": "Stonebot",
+        "iconurl": "",
         "debug":false
     },
-    "chccore":{  
-        "port":,
+    "chccore":{
+        "port": 3335,
         "username":"",
         "password":""
     },
-    "role":{  
+    "role":{
         "chainster":"Chainster",
 		"support":"Support"
     },
@@ -19,27 +19,18 @@
 		"url": "",
 		"db": ""
 	},
-    "Channels":{  
-        "mining":"376589052444672001",
-        "altcoin":"376583883426365460",
-        "support":"376580497129734154",
-        "ticketcloselog":"",
-	"supportprivate":"",
-        "spanish":"380141655539318785",
-        "general":"376563578599112705",
-        "chaintipster":"384932211956121600",
-        "masternode":"376580150290284554",
-        "joinchannels":"390895478595911681"
+    "Channels":{
+        "logchannel": "464146525379887114",
     },
-    "id":{  
-        "self":"379917668116856833",
-        "other":[  
-            "324631108731928587",
-            "396465506707832844"
+    "id":{
+        "self":"",
+        "other":[
+            "",
+            ""
         ]
     },
-    "coin":{  
-        "symbol":"",
-        "explorer":""
+    "coin":{
+        "symbol":"STONE",
+        "explorer":"explorer.stonecoin.rocks"
     }
 }

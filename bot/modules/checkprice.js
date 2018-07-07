@@ -150,7 +150,7 @@ exports.cp = {
 
 exports.price = {
     usage: "",
-    description: "Check Chaincoin price.",
+    description: "Check Stonecoin price.",
     process: function(bot, msg, suffix) {
         let embed;
         let symbol = "chc";
@@ -245,7 +245,7 @@ exports.price = {
 
 exports.market = {
     usage: "",
-    description: "See all Chaincoin buy/sell orders.",
+    description: "See all Stonecoin buy/sell orders.",
     process: function(bot, msg, suffix) {
         let embed;
         let field_buy = "Buy offers:";

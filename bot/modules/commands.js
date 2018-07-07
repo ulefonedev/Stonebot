@@ -17,7 +17,7 @@ exports.commands = [
 
 exports.info = {
     usage: " ",
-    description: "What is a ChainCoin?",
+    description: "What is a Stonecoin?",
     process: function(bot, msg) {
         const embed = {
             color: 1741945,
@@ -27,21 +27,21 @@ exports.info = {
                 text: "\u00A9 " + Bot.name
             },
             fields: [{
-                    name: "What is a ChainCoin?",
-                    value: "[**ChainCoin**](https://www.chaincoin.org/) is a global leader for instant secure transactions backed by one of the largest worldwide community networks in digital currency."
+                    name: "What is a Stonecoin?",
+                    value: "[**Stonecoin**](https://www.chaincoin.org/) is a global leader for instant secure transactions backed by one of the largest worldwide community networks in digital currency."
                 },
                 {
-                    name: "Get rewarded with Chaincoin",
-                    value: "[**Chaincoin masternode**](https://www.chaincoin.org/what-is-a-masternode/) operators provide Private Send and Instant Send functionality and are rewarded for their service delivery. Stakeholders collectively participate in decentralized decision making through the Chaincoin Governance Protocol. Any interested party can participate in Chaincoin’s governance."
+                    name: "Get rewarded with Stonecoin",
+                    value: "[**Stonecoin masternode**](https://www.chaincoin.org/what-is-a-masternode/) operators provide Private Send and Instant Send functionality and are rewarded for their service delivery. Stakeholders collectively participate in decentralized decision making through the Stonecoin Governance Protocol. Any interested party can participate in Stonecoin’s governance."
                 },
                 {
-                    name: "Why choose ChainCoin?",
-                    value: "**No Pre-Mining** - We want many Chaincoins to be available to our community to mine, grow, and benefit from." +
-                        "\n**Financial Independence** - Chaincoin encompasses a self-funding blockchain which promotes continued growth and development." +
-                        "\n**Unique Hashing Algo** - Chaincoin was the first coin to use the C11 hashing algorithm which keeps mining open to GPU miners." +
+                    name: "Why choose Stonecoin?",
+                    value: "**No Pre-Mining** - We want many Stonecoins to be available to our community to mine, grow, and benefit from." +
+                        "\n**Financial Independence** - Stonecoin encompasses a self-funding blockchain which promotes continued growth and development." +
+                        "\n**Unique Hashing Algo** - Stonecoin was the first coin to use the C11 hashing algorithm which keeps mining open to GPU miners." +
                         "\n**Masternodes/Coin-Mixing** - Increases privacy by mixing coins to make tracing the source of transactions practically impossible." +
-                        "\n**Decentralized Governance** - Allows the users of Chaincoin to vote on the strategic direction of the coin as well development budgeting." +
-                        "\n**Personal Banking** - Chaincoin will become your own personal bank. Easily store or spend your coins."
+                        "\n**Decentralized Governance** - Allows the users of Stonecoin to vote on the strategic direction of the coin as well development budgeting." +
+                        "\n**Personal Banking** - Stonecoin will become your own personal bank. Easily store or spend your coins."
                 },
                 {
                     name: "Join our Community",
@@ -53,17 +53,17 @@ exports.info = {
                 },
                 {
                     name: "Development roadmap",
-                    value: "The development roadmap is our backbone and is what will make Chaincoin great. It’s going to require hustle and a lot of hard work, but with support from the community, we’re confident we can execute this plan and achieve our mission for Chaincoin." +
+                    value: "The development roadmap is our backbone and is what will make Stonecoin great. It’s going to require hustle and a lot of hard work, but with support from the community, we’re confident we can execute this plan and achieve our mission for Stonecoin." +
                         "\n[**View the full roadmap**](https://www.chaincoin.org/development-roadmap/)"
                 },
                 {
-                    name: "ChainCoin wallet",
-                    value: "Download your Chaincoin wallet. \nAvailable on Windows, Linux, and Mac." +
+                    name: "Stonecoin wallet",
+                    value: "Download your Stonecoin wallet. \nAvailable on Windows, Linux, and Mac." +
                         "\n[**Wallet download**](https://www.chaincoin.org/chaincoin-wallet/)"
                 },
                 {
-                    name: "Get ChainCoin",
-                    value: "Ready to get some Chaincoin? \nYou can get it from Cryptopia using the link below." +
+                    name: "Get Stonecoin",
+                    value: "Ready to get some Stonecoin? \nYou can get it from Cryptopia using the link below." +
                         "\n[**Buy CHC from Cryptopia**](https://www.cryptopia.co.nz/Exchange/?market=CHC_BTC)"
                 }
             ]
@@ -87,10 +87,10 @@ exports.masternode = {
             },
             fields: [{
                 name: "What is a Masternode?",
-                value: "A masternode is a network server which performs service functions on the blockchain like InstantSend and PrivateSend (coin mixing) and increases the network’s stability. In return for these services, masternodes receive a portion of each mined Chaincoin block reward, currently 45%, as well as transaction fees on a periodic basis." +
+                value: "A masternode is a network server which performs service functions on the blockchain like InstantSend and PrivateSend (coin mixing) and increases the network’s stability. In return for these services, masternodes receive a portion of each mined Stonecoin block reward, currently 45%, as well as transaction fees on a periodic basis." +
                     "\n\nAny interested party can run a masternode and assist in fulfilling the objective of providing a true global level of decentralization for all countries, geographies, individuals, companies and organizations." +
-                    "\n\nMasternode setup requires 1,000 Chaincoin (CHC) to be sent to the operator’s wallet, a form of Proof of Stake. Masternodes also receive voting rights on the proposals in the network to help guide future expansion." +
-                    "\n\nYOU can become an integral part of the community by going through the masternode setup process and helping us on our way to becoming the largest network in the world providing blockchain based Instant Secure Transactions with Chaincoin."
+                    "\n\nMasternode setup requires 1,000 Stonecoin (CHC) to be sent to the operator’s wallet, a form of Proof of Stake. Masternodes also receive voting rights on the proposals in the network to help guide future expansion." +
+                    "\n\nYOU can become an integral part of the community by going through the masternode setup process and helping us on our way to becoming the largest network in the world providing blockchain based Instant Secure Transactions with Stonecoin."
             }]
         };
         msg.channel.send({
@@ -101,11 +101,11 @@ exports.masternode = {
 
 exports.specs = {
     usage: " ",
-    description: "ChainCoin specification",
+    description: "Stonecoin specification",
     process: function(bot, msg) {
         needle.get("http://104.238.153.140:3001/ext/getbalance/CGTta3M4t3yXu8uRgkKvaWd2d8DQvDPnpL", function(error, response) {
             if (error || response.statusCode !== 200) {
-			
+
             } else {
                 let balance = Number(response.body);
                 const embed = {
@@ -117,7 +117,7 @@ exports.specs = {
                     },
                     fields: [{
                         name: "Coin specification",
-                        value: "Name: ChainCoin" + "\n" +
+                        value: "Name: Stonecoin" + "\n" +
                             "Symbol: CHC" + "\n" +
                             "Pre-mine: No" + "\n" +
                             "CPU mining: Yes" + "\n" +
@@ -159,13 +159,13 @@ exports.vision = {
                 text: "\u00A9 " + Bot.name
             },
             fields: [{
-                    name: "Chaincoin’s Instant Secure Transactions Sending Money Around The World.",
-                    value: "Chaincoin is a global leader for instant secure transactions allowing users to transmit value around the world on one of the largest worldwide community networks in digital currency providing increased privacy and speed." +
-                        "\n\nWhat this means for you is Chaincoin will be easier to use than a local bank. Put money in, pull money out, spend your money, and best of all Chaincoin works for you 24/7—Send money when and where you need. All this happens outside current banking channels allowing more freedom over your funds than you have with traditional remittance service providers."
+                    name: "Stonecoin’s Instant Secure Transactions Sending Money Around The World.",
+                    value: "Stonecoin is a global leader for instant secure transactions allowing users to transmit value around the world on one of the largest worldwide community networks in digital currency providing increased privacy and speed." +
+                        "\n\nWhat this means for you is Stonecoin will be easier to use than a local bank. Put money in, pull money out, spend your money, and best of all Stonecoin works for you 24/7—Send money when and where you need. All this happens outside current banking channels allowing more freedom over your funds than you have with traditional remittance service providers."
                 },
                 {
                     name: "Cross Blockchain Value Exchange @ PROJECT X-CHAIN",
-                    value: "Even though the blockchain network is decentralized, many of the services that allow its use in the real world are still centralized. With Project X-Chain we will create a decentralized ecosystem by “chaining” multiple blockchains together and providing an in-wallet exchange. Using this technology, a library of applications can then be developed to further enhance and assist the Chaincoin community in value exchanges."
+                    value: "Even though the blockchain network is decentralized, many of the services that allow its use in the real world are still centralized. With Project X-Chain we will create a decentralized ecosystem by “chaining” multiple blockchains together and providing an in-wallet exchange. Using this technology, a library of applications can then be developed to further enhance and assist the Stonecoin community in value exchanges."
                 },
                 {
                     name: "Core Objective",
@@ -173,14 +173,14 @@ exports.vision = {
                         "\n**Decentralization:** Remain true to the principles of decentralization." +
                         "\n**Onboarding:** Ensure it is simple and easy to acquire CHC." +
                         "\n**Spending:** Withdraw cash from atms, spend with debit cards, or buy online – same as you can with your local bank." +
-                        "\n**Control:** Chaincoin will be a feature-rich wallet (mobile and online) allowing you the highest control over your funds." +
-                        "\n**Rewards:** As a Chaincoin masternode owner and/or miner you get rewarded for your contribution." +
-                        "\n**Community:** Always remember the community when making decisions for the long term success of Chaincoin."
+                        "\n**Control:** Stonecoin will be a feature-rich wallet (mobile and online) allowing you the highest control over your funds." +
+                        "\n**Rewards:** As a Stonecoin masternode owner and/or miner you get rewarded for your contribution." +
+                        "\n**Community:** Always remember the community when making decisions for the long term success of Stonecoin."
                 },
                 {
-                    name: "ChainCoin | Established 2014",
-                    value: "Chaincoin was launched on Jan 18, 2014. Chaincoin was the first blockchain coin launched with eleven hashing algorithms chained, one on top of the other, with intentions to free individuals from centralized banking and create a strong community to support the global movement into cryptocurrency." +
-                        "\n\nChaincoin continues to thrive because of the dedicated community which supports its success and evolution to seize current and future opportunities."
+                    name: "Stonecoin | Established 2018",
+                    value: "Stonecoin." +
+                        "\n\nStonecoin continues to thrive because"
                 }
             ]
         };
@@ -222,7 +222,7 @@ exports.roadmap = {
                     value: "Various stability and security enhancements based on Dash 12.2"
                 },
                 {
-                    name: "Chaincoin Merchant / ATM Services (2018Q3)",
+                    name: "Stonecoin Merchant / ATM Services (2018Q3)",
                     value: "Payment card to withdraw/spend funds making it more consumer friendly."
                 },
                 {
@@ -251,19 +251,19 @@ exports.faq = {
                        }, */
             fields: [{
                     name: "1. How do I create a master node?",
-                    value: "A master node not only earns you an income, it provides a valuable service to the ChainCoin network. As such, it needs to be hosted on a computer that is online 24/7 and has a static IP address. This is not normally your home computer. We strongly recommend you use a hosted VPS such as those provided by [vultr](www.vultr.com). We have developed a written guide and a set of tutorial videos to help you deploy a masternode. You should have some level of computer ability before attempting this. You should also follow the guide EXACTLY, checking that you have file and pathnames correct (for example, ~/.chaincoin is right, ~./chaincoin is wrong. chaincoin.conf is right, chaincoind.conf is wrong).  You can refer tutorial that are provided by using **!tutorial** command."
+                    value: "A master node not only earns you an income, it provides a valuable service to the Stonecoin network. As such, it needs to be hosted on a computer that is online 24/7 and has a static IP address. This is not normally your home computer. We strongly recommend you use a hosted VPS such as those provided by [vultr](www.vultr.com). We have developed a written guide and a set of tutorial videos to help you deploy a masternode. You should have some level of computer ability before attempting this. You should also follow the guide EXACTLY, checking that you have file and pathnames correct (for example, ~/.chaincoin is right, ~./chaincoin is wrong. chaincoin.conf is right, chaincoind.conf is wrong).  You can refer tutorial that are provided by using **!tutorial** command."
                 },
                 {
                     name: "2. What do I do if I run into a problem?",
-                    value: "First, check you have followed the setup steps exactly. If you are using the PF< try watching the videos as well, and vice versa. You might see you missed a step or typed something wrong. - Wait. Some actions on the server (starting it, receiving coins etc) can take some time. - Join our Discord team at [**Chaincoin Discord Invite**](https://discord.gg/NabdcJ7) and go to the <#" + supportChannel + "> channel."
+                    value: "First, check you have followed the setup steps exactly. If you are using the PF< try watching the videos as well, and vice versa. You might see you missed a step or typed something wrong. - Wait. Some actions on the server (starting it, receiving coins etc) can take some time. - Join our Discord team at [**Stonecoin Discord Invite**](https://discord.gg/NabdcJ7) and go to the <#" + supportChannel + "> channel."
                 },
                 {
                     name: "3. Can I run multiple masternodes from one server?",
-                    value: "Masternodes are designed to help the network. As such, each one should be on a separate server. Trying to run more than one on the same server might seem like a good idea for you, but it doesn't really help Chaincoin! Having said that, we havent found a reliable way to run multiple masternodes on one server. Each one would need it's own IP address for a start. This may change in future, with new releases of the code. If so, we'll update the Wiki."
+                    value: "Masternodes are designed to help the network. As such, each one should be on a separate server. Trying to run more than one on the same server might seem like a good idea for you, but it doesn't really help Stonecoin! Having said that, we havent found a reliable way to run multiple masternodes on one server. Each one would need it's own IP address for a start. This may change in future, with new releases of the code. If so, we'll update the Wiki."
                 },
                 {
                     name: "4. How do I setup a masternode on Mac/Windows/Raspberry PI/My refrigerator?",
-                    value: "We are working with teammembers and developers to create guides for other operating systems. Your masternode should not really be hosted on your Desktop - it really needs to be on a fast network, 24/7, with a static IP address Having said that, as guides for other operating systems are developed, we'll let you know here and at [**ChainCoin**](www.chaincoin.org)."
+                    value: "We are working with teammembers and developers to create guides for other operating systems. Your masternode should not really be hosted on your Desktop - it really needs to be on a fast network, 24/7, with a static IP address Having said that, as guides for other operating systems are developed, we'll let you know here and at [**Stonecoin**](www.chaincoin.org)."
                 },
                 {
                     name: "5. How many coins do I need to run a masternode?",
@@ -310,9 +310,9 @@ exports.faq = {
                     name: "12. Where is my wallet.dat located?",
                     value: "For the GUI wallet, you specified this location the first time you ran the program.\n" +
                         "By default:\n" +
-                        "```On Windows 7+ it is in C:\\Users<username>\\AppData\\Roaming\\Chaincoin where is your account login\n" +
+                        "```On Windows 7+ it is in C:\\Users<username>\\AppData\\Roaming\\Stonecoin where is your account login\n" +
                         "On Linux (Ubuntu) it is in ~/.chaincoin\n" +
-                        "On Mac it is in ~/Library/Application Support/Chaincoin```"
+                        "On Mac it is in ~/Library/Application Support/Stonecoin```"
                 },
                 {
                     name: "13. How to edit the chaincoin.conf on ubuntu VPS?",
@@ -368,7 +368,7 @@ exports.faq = {
 
 exports.tutorial = {
     usage: " ",
-    description: "ChainCoin Tutorials & Guides",
+    description: "Stonecoin Tutorials & Guides",
     process: function(bot, msg) {
         const embed = {
             color: 1741945,
@@ -380,16 +380,8 @@ exports.tutorial = {
             author: {
                 name: "Tutorials & Guides"
             },
-            description: "[**How to buy your first CHC (pdf)**](https://www.chaincoin.org/wp-content/uploads/2017/07/How-to-buy-your-first-CHC.pdf)" + "\n" +
-                "[**How to set up your CHC wallet (pdf)**](https://www.chaincoin.org/wp-content/uploads/2017/07/How-to-Set-Up-Your-CHC-Wallet.pdf)" + "\n" +
-                "[**Setting up a Chaincoin masternode (pdf)**](https://toaster.chaincoin.org/docs/Setting%20up%20a%20Chaincoin%20Masternode%20-%20draft%20v.04.pdf)" + "\n" +
-                "[**How to convert your existing masternode from a remote wallet to a local controller wallet (pdf)**](https://toaster.chaincoin.org/docs/convert_masternode_to_controller.pdf)" + "\n" +
-                "[**Chaincoin masternode remote controller setup (YouTube)**](https://www.youtube.com/watch?v=KSWfXdmb48c)" + "\n" +
-                "[**Chaincoin masternodes recap, remote-controller setup (YouTube)**](https://www.youtube.com/watch?v=W2i311gQiEI)" + "\n" +
-                "[**Launching a ChainCoin masternode- made easy (Website)**](https://medium.com/@Crypto_Wizard/launching-a-chaincoin-masternode-made-easy-92fa2f41c195)" + "\n" +
-                "[**How to host a Chaincoin masternode on windows. (Website)**](https://steemit.com/chaincoin/@jeffblogs/how-to-host-a-chaincoin-masternode-on-windows)" + "\n" +
-                "[**ChainCoin masternode setup guide (Website)**](https://steemit.com/chaincoin/@usncrypto/chaincoin-masternode-setup-guide)" + "\n" +
-                "[**How to Install 3 CHAINCOIN MasterNodes on 1 VPS**](https://steemit.com/masternode/@fredyendesigns/tutorial-how-to-install-3-chaincoin-masternodes-on-1-vps)"
+            description: "[**Stonecoin Masternode Setup**](https://github.com/stonecoinproject/stonemnsetup)" + "\n" +
+                "[**Another guide can go here**](http://explorer.rocks)"
         };
         msg.channel.send({
             embed

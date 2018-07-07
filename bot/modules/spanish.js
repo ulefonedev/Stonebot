@@ -11,7 +11,7 @@ exports.commands = [
 
 exports.spanish = {
     usage: "**[subcommand]** [tutorial, faq, info, masternode, etc. soon]",
-    description: "Guías y Tutoriales.\n    Preguntas más frecuentes.\n    ¿Qué esChainCoin - CHC?\n    ¿Qué es un Masternode?\n    etc. soon\n    This command only can be use in <#" + ChannelID + ">",
+    description: "Guías y Tutoriales.\n    Preguntas más frecuentes.\n    ¿Qué esStonecoin - CHC?\n    ¿Qué es un Masternode?\n    etc. soon\n    This command only can be use in <#" + ChannelID + ">",
     process: function(bot, msg, suffix) {
         let command = "!spanish";
         let words = suffix.trim().split(" ").filter(function(n) {
@@ -65,10 +65,10 @@ exports.spanish = {
                 author: {
                     name: "¿Qué es un Masternode?"
                 },
-                description: "Un masternode es un servidor de red que realiza funciones de servicio en blockchain como InstantSend y PrivateSend (mezcla de monedas) y aumenta la estabilidad de la red. A cambio de estos servicios, los nodos principales reciben una parte de cada recompensa del bloque Chaincoin extraído, actualmente el 45%, así como las tarifas de transacción de forma periódica." +
+                description: "Un masternode es un servidor de red que realiza funciones de servicio en blockchain como InstantSend y PrivateSend (mezcla de monedas) y aumenta la estabilidad de la red. A cambio de estos servicios, los nodos principales reciben una parte de cada recompensa del bloque Stonecoin extraído, actualmente el 45%, así como las tarifas de transacción de forma periódica." +
                     "\n\nCualquier persona interesada puede ejecutar un masternode y ayudar a cumplir el objetivo de proporcionar un verdadero nivel global de descentralización para todos los países, geografías, individuos, empresas y organizaciones." +
-                    "\n\nLa configuración de un nodo requiere 1,000 Chaincoin (CHC) para ser enviados a la billetera del operador, una forma de POS. Los nodos maestros también recibe derechos de voto sobre las propuestas en la red para ayudar a guiar la expansión futura del proyecto." +
-                    "\n\nUSTED puede convertirse en una parte integral de la comunidad yendo a través del proceso de configuración del nodo maestro y ayudándonos en nuestro camino para convertirnos en la red más grande del mundo que ofrece Transacciones instantáneas y seguras basadas en blockchain con Chaincoin."
+                    "\n\nLa configuración de un nodo requiere 1,000 Stonecoin (CHC) para ser enviados a la billetera del operador, una forma de POS. Los nodos maestros también recibe derechos de voto sobre las propuestas en la red para ayudar a guiar la expansión futura del proyecto." +
+                    "\n\nUSTED puede convertirse en una parte integral de la comunidad yendo a través del proceso de configuración del nodo maestro y ayudándonos en nuestro camino para convertirnos en la red más grande del mundo que ofrece Transacciones instantáneas y seguras basadas en blockchain con Stonecoin."
             };
             msg.channel.send({
                 embed
@@ -84,21 +84,21 @@ exports.spanish = {
                     text: "\u00A9 " + Bot.name
                 },
                 fields: [{
-                        name: "¿Qué esChainCoin - CHC?",
-                        value: "[**ChainCoin**](https://www.chaincoin.org/) es un líder global para transacciones rápidas, seguras e instantáneas respaldadas por una de las redes comunitarias más grandes en moneda digital."
+                        name: "¿Qué esStonecoin - CHC?",
+                        value: "[**Stonecoin**](https://www.chaincoin.org/) es un líder global para transacciones rápidas, seguras e instantáneas respaldadas por una de las redes comunitarias más grandes en moneda digital."
                     },
                     {
-                        name: "Ser recompensado con Chaincoin",
-                        value: "[**Los operadores nodos maestros de Chaincoin**](https://www.chaincoin.org/what-is-a-masternode/) proporcionan la funcionalidad de Envío Privado y Envío Instantáneo y son recompensados por la entrega de sus servicios. Las partes interesadas participan colectivamente en la toma de decisiones descentralizada a través del Protocolo de Gobernanza de Chaincoin. Cualquier parte interesada puede participar en el gobierno de Chaincoin."
+                        name: "Ser recompensado con Stonecoin",
+                        value: "[**Los operadores nodos maestros de Stonecoin**](https://www.chaincoin.org/what-is-a-masternode/) proporcionan la funcionalidad de Envío Privado y Envío Instantáneo y son recompensados por la entrega de sus servicios. Las partes interesadas participan colectivamente en la toma de decisiones descentralizada a través del Protocolo de Gobernanza de Stonecoin. Cualquier parte interesada puede participar en el gobierno de Stonecoin."
                     },
                     {
-                        name: "¿Por qué elegir ChainCoin?",
+                        name: "¿Por qué elegir Stonecoin?",
                         value: "**Sin minería previa** - Queremos que muchos chaincoins estén disponibles para nuestra comunidad para explotar, crecer y beneficiarse." +
-                            "\n**Independencia financiera** - Chaincoin abarca una cadena de bloques autofinanciada que promueve el crecimiento y el desarrollo continuo." +
-                            "\n**UniqueHashing Algo** - Chaincoin fue la primera moneda en usar el algoritmo de hash C11 que mantiene la minería abierta a los mineros de GPU." +
+                            "\n**Independencia financiera** - Stonecoin abarca una cadena de bloques autofinanciada que promueve el crecimiento y el desarrollo continuo." +
+                            "\n**UniqueHashing Algo** - Stonecoin fue la primera moneda en usar el algoritmo de hash C11 que mantiene la minería abierta a los mineros de GPU." +
                             "\n**Masternodes / Coin-Mixing** - Aumenta la privacidad mediante la mezcla de monedas para hacer que el seguimiento de la fuente de las transacciones sea prácticamente imposible." +
-                            "\n**Gobernanza descentralizada** - Permite a los usuarios de Chaincoin votar sobre la dirección estratégica de la moneda y el presupuesto de desarrollo." +
-                            "\n**Banca personal** - Chaincoin se convertirá en su propio banco personal. Almacene o gaste sus monedas fácilmente."
+                            "\n**Gobernanza descentralizada** - Permite a los usuarios de Stonecoin votar sobre la dirección estratégica de la moneda y el presupuesto de desarrollo." +
+                            "\n**Banca personal** - Stonecoin se convertirá en su propio banco personal. Almacene o gaste sus monedas fácilmente."
                     },
                     {
                         name: "Únete a nuestra comunidad",
@@ -109,17 +109,17 @@ exports.spanish = {
                     },
                     {
                         name: "Hoja de ruta del proyecto",
-                        value: "El plan de desarrollo es nuestra columna vertebral y es lo que hará que Chaincoin sea grandioso. Va a requerir mucho esfuerzo y mucho trabajo, pero con el apoyo de la comunidad, confiamos en que podemos ejecutar este plan y lograr nuestra misión para Chaincoin." +
+                        value: "El plan de desarrollo es nuestra columna vertebral y es lo que hará que Stonecoin sea grandioso. Va a requerir mucho esfuerzo y mucho trabajo, pero con el apoyo de la comunidad, confiamos en que podemos ejecutar este plan y lograr nuestra misión para Stonecoin." +
                             "\n[**Ver la hoja de ruta completa**](https://www.chaincoin.org/development-roadmap/)"
                     },
                     {
-                        name: "Monedero ChainCoin",
-                        value: "Descargue su billetera Chaincoin. \nDisponible en Windows, Linux y Mac." +
+                        name: "Monedero Stonecoin",
+                        value: "Descargue su billetera Stonecoin. \nDisponible en Windows, Linux y Mac." +
                             "\n[**Descargar Wallet**](https://www.chaincoin.org/chaincoin-wallet/)"
                     },
                     {
-                        name: "Obtener ChainCoin",
-                        value: "¿Listo para comprar Chaincoin? \nPuede obtenerlo de Cryptopia usando el siguiente enlace." +
+                        name: "Obtener Stonecoin",
+                        value: "¿Listo para comprar Stonecoin? \nPuede obtenerlo de Cryptopia usando el siguiente enlace." +
                             "\n[**Comprar CHC de Cryptopia**](https://www.cryptopia.co.nz/Exchange/?market=CHC_BTC)"
                     }
                 ]
@@ -142,13 +142,13 @@ exports.spanish = {
                 },
                 description: "[**Como comprar tus primers CHC (pdf)**](https://www.chaincoin.org/wp-content/uploads/2017/07/How-to-buy-your-first-CHC.pdf)" + "\n" +
                     "[**Como configurar tu billetera CHC (pdf)**](https://www.chaincoin.org/wp-content/uploads/2017/07/How-to-Set-Up-Your-CHC-Wallet.pdf)" + "\n" +
-                    "[**Configurar un nodo maestro Chaincoin (pdf)**](https://toaster.chaincoin.org/docs/Setting%20up%20a%20Chaincoin%20Masternode%20-%20draft%20v.04.pdf)" + "\n" +
+                    "[**Configurar un nodo maestro Stonecoin (pdf)**](https://toaster.chaincoin.org/docs/Setting%20up%20a%20Stonecoin%20Masternode%20-%20draft%20v.04.pdf)" + "\n" +
                     "[**Como convertir tu nodo ya existente de una billetera remota a un control remoto local para la billetera (pdf)**](https://toaster.chaincoin.org/docs/convert_masternode_to_controller.pdf)" + "\n" +
                     "[**Configuracion de nodo maestro con control remoto (YouTube)**](https://www.youtube.com/watch?v=KSWfXdmb48c)" + "\n" +
                     "[**Recap. Configuracion de nodo con control remoto (YouTube)**](https://www.youtube.com/watch?v=W2i311gQiEI)" + "\n" +
                     "[**Corre tu nodo maestro – Hazlo fácil – (Website)**](https://medium.com/@Crypto_Wizard/launching-a-chaincoin-masternode-made-easy-92fa2f41c195)" + "\n" +
                     "[**Como alojar un nodo maestro en Windows (Website)**](https://steemit.com/chaincoin/@jeffblogs/how-to-host-a-chaincoin-masternode-on-windows)" + "\n" +
-                    "[**Guia de configuración de nodo maestro ChainCoin (Website)**](https://steemit.com/chaincoin/@usncrypto/chaincoin-masternode-setup-guide)"
+                    "[**Guia de configuración de nodo maestro Stonecoin (Website)**](https://steemit.com/chaincoin/@usncrypto/chaincoin-masternode-setup-guide)"
             };
             msg.channel.send({
                 embed
@@ -166,19 +166,19 @@ exports.spanish = {
 				}, */
                 fields: [{
                         name: "1. ¿Cómo creo un nodo maestro – MN - MasterNode?",
-                        value: "Un nodo maestro no solo le genera un ingreso, sino que también proporciona un servicio valioso a la red de ChainCoin. Como tal, necesita estar alojado en una computadora que está en línea 24/7 y tiene una dirección IP estática. Esta no es normalmente la computadora de tu casa. Recomendamos encarecidamente que utilice un VPS alojado como los provistos por [vultr](www.vultr.com). Hemos desarrollado una guía escrita y un conjunto de videos tutoriales para ayudarlo a implementar un nodo maestro . Deberías tener cierto nivel de habilidad con la computadora antes de intentar esto. También debe seguir la guía EXACTAMENTE, verificando que el archivo y las rutas sean correctos (por ejemplo, ~ / .chaincoin es correcto, ~. / Chaincoin es incorrecto. Chaincoin.conf tiene razón, chaincoind.conf está equivocado). Puede consultar el tutorial que se proporciona al usar el comando **!tutorial**."
+                        value: "Un nodo maestro no solo le genera un ingreso, sino que también proporciona un servicio valioso a la red de Stonecoin. Como tal, necesita estar alojado en una computadora que está en línea 24/7 y tiene una dirección IP estática. Esta no es normalmente la computadora de tu casa. Recomendamos encarecidamente que utilice un VPS alojado como los provistos por [vultr](www.vultr.com). Hemos desarrollado una guía escrita y un conjunto de videos tutoriales para ayudarlo a implementar un nodo maestro . Deberías tener cierto nivel de habilidad con la computadora antes de intentar esto. También debe seguir la guía EXACTAMENTE, verificando que el archivo y las rutas sean correctos (por ejemplo, ~ / .chaincoin es correcto, ~. / Stonecoin es incorrecto. Stonecoin.conf tiene razón, chaincoind.conf está equivocado). Puede consultar el tutorial que se proporciona al usar el comando **!tutorial**."
                     },
                     {
                         name: "2. ¿Qué hago si me encuentro con un problema?",
-                        value: "Primero, compruebe que ha seguido exactamente los pasos de configuración. Si está utilizando el PF <intente ver los videos también, y viceversa. Es posible que vea que omitió un paso o escribió algo incorrecto. - Espere. Algunas acciones en el servidor (iniciarlo, recibir monedas, etc.) pueden llevar algo de tiempo. - Únete a nuestro equipo de Discord en [**Invitacion de ChaincoinDiscord**](https://discord.gg/NabdcJ7) e ingresa al canal <#" + supportChannel + ">."
+                        value: "Primero, compruebe que ha seguido exactamente los pasos de configuración. Si está utilizando el PF <intente ver los videos también, y viceversa. Es posible que vea que omitió un paso o escribió algo incorrecto. - Espere. Algunas acciones en el servidor (iniciarlo, recibir monedas, etc.) pueden llevar algo de tiempo. - Únete a nuestro equipo de Discord en [**Invitacion de StonecoinDiscord**](https://discord.gg/NabdcJ7) e ingresa al canal <#" + supportChannel + ">."
                     },
                     {
                         name: "3. ¿Puedo ejecutar múltiples nodos maestros desde un servidor?",
-                        value: "Los nodos maestros están diseñados para ayudar a la red. Como tal, cada uno debe estar en un servidor separado. Intentar ejecutar más de uno en el mismo servidor puede parecer una buena idea para ti, ¡pero realmente no ayuda a Chaincoin! Habiendo dicho eso, no hemos encontrado una manera confiable de ejecutar múltiples masternodes en un servidor. Cada uno necesitaría su propia dirección IP para comenzar. Esto puede cambiar en el futuro, con nuevas versiones del código. Si es así, actualizaremos la Wiki de Chaincoin."
+                        value: "Los nodos maestros están diseñados para ayudar a la red. Como tal, cada uno debe estar en un servidor separado. Intentar ejecutar más de uno en el mismo servidor puede parecer una buena idea para ti, ¡pero realmente no ayuda a Stonecoin! Habiendo dicho eso, no hemos encontrado una manera confiable de ejecutar múltiples masternodes en un servidor. Cada uno necesitaría su propia dirección IP para comenzar. Esto puede cambiar en el futuro, con nuevas versiones del código. Si es así, actualizaremos la Wiki de Stonecoin."
                     },
                     {
                         name: "4. ¿Cómo configuro un nodo maestro en Mac / Windows / Raspberry PI / Myrefrigerator?",
-                        value: "Estamos trabajando con miembros del equipo y desarrolladores para crear guías para otros sistemas operativos. Su nodo maestro no debería estar realmente alojado en su escritorio; realmente necesita estar en una red rápida, 24 horas al día, 7 días a la semana, con una dirección IP estática. Dicho esto, como guías para otros sistemas operativos están desarrolladas, le haremos saber aquí y en [**ChainCoin**](www.chaincoin.org)."
+                        value: "Estamos trabajando con miembros del equipo y desarrolladores para crear guías para otros sistemas operativos. Su nodo maestro no debería estar realmente alojado en su escritorio; realmente necesita estar en una red rápida, 24 horas al día, 7 días a la semana, con una dirección IP estática. Dicho esto, como guías para otros sistemas operativos están desarrolladas, le haremos saber aquí y en [**Stonecoin**](www.chaincoin.org)."
                     },
                     {
                         name: "5. ¿Cuántas monedas necesito para ejecutar un nodo maestro?",
@@ -225,9 +225,9 @@ exports.spanish = {
                         name: "12. ¿Dónde está mi wallet.dat?",
                         value: "Para la billetera de GUI, especificó esta ubicación la primera vez que ejecutó el programa.\n" +
                             "Por defecto:\n" +
-                            "```En Windows 7+, se encuentra en C:\\Users<nombre de usuario>\\AppData\\Roaming\\Chaincoin, donde se inicia sesión en su cuenta\n" +
+                            "```En Windows 7+, se encuentra en C:\\Users<nombre de usuario>\\AppData\\Roaming\\Stonecoin, donde se inicia sesión en su cuenta\n" +
                             "En Linux (Ubuntu) está en ~/.chaincoin\n" +
-                            "En Mac estáen ~/Library/Application Support/Chaincoin```"
+                            "En Mac estáen ~/Library/Application Support/Stonecoin```"
                     },
                     {
                         name: "13. ¿Cómo editar chaincoin.conf en ubuntu VPS",
