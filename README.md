@@ -1,5 +1,5 @@
-# Bot for [Stonecoin's Discord] https://discord.gg/GVcMcng
-Originally based off of Chaincoin's bot
+# Bot for [Fluminense Discord] https://discord.gg/TBP6BnH
+Originally based off of Fluminense bot
 (This README will be updated along with bot updates)
 
 ## Features:
@@ -83,6 +83,5 @@ node bot/bot.js
 
 ## Donation
 ```
-Stonecoin: CL5WSq5M1RRPFDfDbZp6dq2ndV6F93CtkB
-Ravencoin: 
+
 ```
